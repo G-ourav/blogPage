@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-gray-100 text-gray-900">
+  <body class="bg-gray-300 text-gray-900">
     <header class="py-6 px-5 md:px-24">
       <div class="container">
         <div class="flex gap-2 mx-auto">
@@ -46,7 +46,9 @@
       </div>
     </div>
     <div class="container px-5 md:px-24 py-5">
-      <div class="content bg-white p-6 rounded-lg shadow-lg" id="blog-content2"></div>
+      <div class="content bg-white p-6 rounded-lg shadow-lg" id="blog-content2">
+        <h1 id="blog-title1" class="text-2xl py-5 font-bold uppercase font-serif">Blog Title 1</h1>
+      </div>
       <img
         id="image3"
         class="w-full my-6 rounded-lg"
@@ -58,6 +60,7 @@
 
     <script>
       const blogTitle = "Dynamic Blog Title with Tailwind CSS";
+      const blogTitle1 = "Dynamic Blog Title with Tailwind CSS";
       const blogOther = "  Dynamic Blog Title with Tailwind CSS";
       const image1Src =
         "https://img.freepik.com/free-photo/tropical-beach_1203-6634.jpg?t=st=1718186288~exp=1718189888~hmac=040e2cbc4d675c9a7abe04791fec84c9f567eeaa565f9fc34ea59fd656a31317&w=1380";
@@ -107,6 +110,7 @@
       ];
 
       document.getElementById("blog-title").innerText = blogTitle;
+      document.getElementById("blog-title1").innerText = blogTitle1;
       document.getElementById("image1").src = image1Src;
       document.getElementById("image2").src = image2Src;
       document.getElementById("image3").src = image3Src;
